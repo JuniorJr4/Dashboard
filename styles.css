@@ -15,3 +15,39 @@
 .main {
     grid-column: 2 / -1;
 }
+
+.top-top, .top-right, .top-bottom, .top-left {
+    display: flex;
+}
+
+.top-top {
+    justify-content: space-between;
+}
+
+.top-bottom {
+    justify-content: space-between;
+}
+
+.handle-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+.main-left {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card {
+    height: 125px;
+    width: 200px;
+}
+
+.right-bottom {
+    display: flex;
+}
