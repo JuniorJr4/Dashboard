@@ -10,6 +10,7 @@
   --lime-800: #3f6212;
   --lime-900: #365314;
   margin: 0;
+  font-family: 'Roboto';
 }
 
 body {
@@ -18,6 +19,10 @@ body {
 
 li {
   list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 15px 0 15px 0;
 }
 
 .page-container {
@@ -31,7 +36,22 @@ li {
 .side-nav {
   grid-row: 1 / -1;
   background-color: var(--lime-700);
-  color: var(--lime-50);
+  color: var(--lime-100);
+}
+
+.dash-logo {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.side-top, .side-bottom {
+  padding-left: 20px;
+}
+
+.side-top {
+  margin-bottom: 50px;
 }
 
 .main {
@@ -53,7 +73,7 @@ li {
 
 .top-buttons {
   border-radius: 10px;
-  background-color: var(--lime-900);
+  background-color: var(--lime-700);
   color: var(--lime-100);
   width: 80px;
   height: 25px;
@@ -75,7 +95,7 @@ input {
   height: 20px;
   border-radius: 10px;
   background-color: var(--lime-100);
-  border: 1px solid var(--lime-400);
+  border: 1px solid var(--lime-700);
 }
 
 .search {
@@ -155,8 +175,8 @@ input {
 }
 
 .middle {
-  border-top: 1px solid var(--lime-800);
-  border-bottom: 1px solid var(--lime-800);
+  border-top: 1px solid var(--lime-700);
+  border-bottom: 1px solid var(--lime-700);
 }
 
 .trending {
@@ -241,6 +261,7 @@ input {
   grid-row: 2 / -1;
   column-gap: 25px;
   background-color: var(--lime-200);
+  padding-bottom: 60px;
 }
 
 h6,
